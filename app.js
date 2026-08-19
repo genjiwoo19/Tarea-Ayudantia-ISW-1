@@ -42,8 +42,9 @@ const obtenerConsejo = async () => {
         // Qué pasa si hay un error (ej. el usuario se queda sin internet)
         // TODO: console.error...
         // TODO: text.textcontent = ...
-        error = "Error al obtener el consejo. Por favor, inténtalo de nuevo.";
         console.error(error);
+        textoConsejo.textContent = "¡Ups!…";
+
     } finally {
         // El bloque finally se ejecuta SIEMPRE, haya error o no.
         // Aquí volvemos a habilitar el botón para que puedan pedir otro consejo.
